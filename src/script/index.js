@@ -22,7 +22,6 @@ const listeners = ()=>{
   let slideDownListener;
 
   const attachSlideUpListener=()=>{
-    console.log(slideUpListener,slideDownListener)
     if(!slideUpListener){
       slideUpListener = document.getElementById("slideUpButton").addEventListener("click",()=>translateItems('0px'));
     }

@@ -407,6 +407,22 @@ a:hover {
   padding: 20px;
   font-family: 'Roboto';
 }
+.buyNowButton{
+    background-color: #FFE145;
+    width: 100%;
+    padding: 11px 0px;
+    border-color: #FFE145;
+    border-radius: 4px;
+    margin-top:17px;
+}
+.buyNowButtonText{
+    letter-spacing: 0.5px;
+    color: #B79C10;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
 #cartList{
     height: 340px;
     overflow: hidden;
