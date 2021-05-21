@@ -435,12 +435,9 @@ a:hover {
     letter-spacing: 0.5px;
     color: #B79C10;
     line-height: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Roboto';
 }
 #cartList{
-    height: 340px;
+    max-height: 340px;
     overflow: hidden;
 }
 #cartList li{
@@ -569,6 +566,9 @@ a:hover {
         width: 86px;
         height: 86px;
     }
+    .cartContainer {
+        width: 275px;
+    }
 
 }
 @media screen and (max-width: 1320px) {
@@ -578,6 +578,10 @@ a:hover {
     }
     .largeText {
         font-size: 14px;
+    }
+    .buyNowButton {
+        padding: 9px 0px;
+        margin-top: 15px;
     }
     .mediumText {
         font-size: 12px;
@@ -597,7 +601,9 @@ a:hover {
     .addToCartButton {
         padding: 10px 13px;
     }
-
+    .cartContainer {
+        width: 250px;
+    }
 }
 @media screen and (max-width: 1200px) {
     #mainTitle {
@@ -658,6 +664,9 @@ a:hover {
     .instagramTextPosition{
         padding-bottom: 0px;
     }
+    .cartContainer {
+        width: 225px;
+    }
 }
 @media screen and (max-width: 921px) {
     #mainTitle {
@@ -677,6 +686,10 @@ a:hover {
     .largeText {
         font-size: 12px;
         line-height: 16px;
+    }
+    .buyNowButton {
+        padding: 6px 0px;
+        margin-top: 13px;
     }
     .mediumText {
         font-size: 10px;
@@ -757,6 +770,9 @@ a:hover {
     .addToCartButton {
         padding: 5px 10px;
     }
+    .cartContainer {
+        width: 175px;
+    }
 }
 @media screen and (max-width: 650px) {
     .deliveryItem {
@@ -802,6 +818,9 @@ a:hover {
     .innerCircle {
         bottom: 7px;
     }
+    .cartContainer {
+        width: 150px;
+    }
 }
 @media screen and (max-width: 550px) {
     #mainTitle {
@@ -819,6 +838,10 @@ a:hover {
     .largeText {
         font-size: 7px;
         line-height: 10px;
+    }
+    .buyNowButton {
+        padding: 4px 0px;
+        margin-top: 10px;
     }
     .cvarciImage {
         width: 175px;
@@ -909,6 +932,9 @@ a:hover {
     .infoTextPosition{
         margin-bottom: 10px;
         margin-right: 0px;
+    }
+    .cartContainer {
+        width: 120px;
     }
 }
 @media screen and (max-width: 500px) {
