@@ -491,10 +491,11 @@ a:hover {
     text-decoration: none;
     justify-content: center;
     vertical-align: middle;
+    display: inline-flex;
     text-align: center;
     align-items: center;
     border-width: 1px;
-    padding:0;
+    padding-bottom:2px;
     outline: none;
     background: none;
     width: 16px;
