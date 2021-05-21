@@ -21,10 +21,15 @@ button[disabled]{
   cursor: unset;
 
 }
-
+.cvarciTitleBottomMargin {
+    margin-bottom: 30px;
+}
 .cartButton{
     cursor: pointer;
     background-color: inherit;
+}
+.loginIcon {
+    padding-bottom: 4px;
 }
 #cart{
     transition: all 1s;
@@ -80,9 +85,12 @@ button[disabled]{
     border: none;
     outline: none;
 }
-
+.cartIcon {
+    width: 20px;
+    height: 20px;
+}
 .cvarciMarginBottom {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .positionCenter {
     display: flex;
@@ -108,7 +116,7 @@ button[disabled]{
     list-style: none;
     display: flex;
     margin-left: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 128px;
 }
 .deliveryItem {
     padding: 22px 24px;
@@ -232,6 +240,7 @@ a:hover {
 .cvarciNameBoldStyle {
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 .inputContainer {
     padding: 26px 16px 26px 16px;
@@ -283,6 +292,13 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.cvarciListContainer {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 128px;
 }
 .listImageSize {
     width: 300px;
@@ -510,10 +526,8 @@ a:hover {
 }
 
 .cart-title{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px;
     padding-bottom: 5px;
@@ -521,10 +535,8 @@ a:hover {
 }
 
 .cartAmount{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
     line-height: inherit;
     display: flex;
     align-items: center;
@@ -713,16 +725,18 @@ a:hover {
     .loginIcon {
         width: 14px;
         height: 14px;
+        padding-bottom: 2px;
     }
     .cartIcon {
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
     }
     .h2TitleStyle {
         font-size: 18px;
     }
     .cvarciNameBoldStyle {
         font-size: 12px;
+        margin-bottom: 7px;
     }
     .inputContainer {
         padding: 12px 14px;
@@ -774,7 +788,7 @@ a:hover {
         height: 250px;
     }
     .cvarciListImageSize{
-        width: 226px;
+        width: 230px;
         height: 250px;
     }
     .navigationButton{
@@ -822,7 +836,13 @@ a:hover {
         margin-left: 0px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 60px;
+    }
+    .cvarciTitleBottomMargin {
         margin-bottom: 15px;
+    }
+    .cvarciListContainer{
+        margin-bottom: 60px;
     }
     .contactItem{
         padding-left: 20px;
