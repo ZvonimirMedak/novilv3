@@ -14,6 +14,11 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.triangleContainer{
+    position: absolute;
+    top: -30px;
+    right: 25px;
+}
 
 button:disabled,
 button[disabled]{
@@ -418,11 +423,13 @@ a:hover {
   top:100px;
   z-index: 2;
   position: absolute;
-  display: none;
+  opacity: 0;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   font-family: 'Roboto';
+
 }
+
 .buyNowButton{
     background-color: #FFE145;
     width: 100%;
@@ -444,6 +451,10 @@ a:hover {
     display: flex;
     margin: 10px 0;
     height: 100px;
+}
+.animateRemoving{
+    height: 0px;
+    transition: height 1s;
 }
 
 #cartList img {
@@ -998,6 +1009,10 @@ a:hover {
         justify-content: center;
         align-items: center;
         margin-bottom: 60px;
+    }
+    .triangleContainer{
+        width: 20px;
+        height: 20px;
     }
     .cvarciTitleBottomMargin {
         margin-bottom: 15px;

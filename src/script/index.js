@@ -122,18 +122,22 @@ const openCloseSlider=()=>{
 
 const toggleCart=()=>{
   const cart = document.getElementById("cart");
-  if(cart.style.display === "inline"){
-    cart.style="display:none;"
+  if(cart.style.opacity === "1"){
+    cart.style="opacity:0;"
   }else{
-    cart.style="display:inline;"
+    cart.style="opacity:1;"
   }
 }
 
 const removeItem=(name)=>{
   const item = document.getElementsByClassName(`${name.id}-li`);
-  item[0].remove();
-  document.getElementById('cartAmountID').innerHTML = counter.decrement();
-  openCloseSlider();
-  translateItems('0px')
-  changeItemState(name.id,false);
+  item[0].style = "transform: translateX(-350px); transition: all 1s;"
+  window.setTimeout(()=>{
+    item[0].remove();
+    document.getElementById('cartAmountID').innerHTML = counter.decrement();
+    openCloseSlider();
+    translateItems('0px')
+    changeItemState(name.id,false);
+  },700)
+  
 }
