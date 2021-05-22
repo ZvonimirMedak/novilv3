@@ -39,24 +39,24 @@
             <img src="src/assets/logo.svg" alt="logo" class="titleImage" aria-label="čvarci.net logo" />
             <div class="spaceBetweenXAxis">
                 <button class="loginButton spaceBetweenXAxis buttonWithoutOutline" type="button">
-                    <img src="src/assets/person.svg" alt="login" class="loginIcon" />
+                    <img loading="lazy" src="src/assets/person.svg" alt="login" class="loginIcon" />
                     <p class="headerRightText family">PRIJAVI SE</p>
                 </button>
                 <button onclick="toggleCart()" class="cartButton buttonWithoutOutline">
-                    <img src="src/assets/cart.svg" alt="cart" class="cartIcon" />
+                    <img loading="lazy" src="src/assets/cart.svg" alt="cart" class="cartIcon" />
                 </button>
                 <p id="cartAmountID" class="cartAmount mediumText family">0</p>
             </div>
             <div id="cart" class="cartContainer">
                 <h2 class="cart-title mediumText family">Moja košarica</h2>
-                <button id="slideUpButton" class="buttonSliderContainer">
-                    <p class="arrow"> arrow up</p>
+                <button id="slideUpButton" type="button" aria-label="scroll up button" class="buttonSliderContainer arrow">
+                    <img loading="lazy" src="src/assets/arrowUp.svg" class="arrowImage" alt="arrow-up">
                 </button>
                 <ul id="cartList"></ul>
-                <button id="slideDownButton"  class="buttonSliderContainer">
-                    <p class="arrow">arrow down</p>
+                <button id="slideDownButton" aria-label="scroll down button" type="button" class="buttonSliderContainer arrow">
+                    <img loading="lazy" src="src/assets/arrowDown.svg" class="arrowImage" alt="arrow-down">
                 </button>
-                <button class="buyNowButton">
+                <button class="buyNowButton" type="submit">
                     <p class="buyNowButtonText largeText family">Kupi sada</p>
                 </button>
             </div>

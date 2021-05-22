@@ -410,7 +410,7 @@ a:hover {
 }
 
 .cartContainer {
-  background-color: #F2F4FA;
+  background: #FFFFFF;
   width: 300px;
   max-height: 540px;
   right:50px;
@@ -485,6 +485,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    cursor: pointer;
 }
 
 .exit-button{
@@ -508,7 +510,7 @@ a:hover {
 }
 
 .item_price{
-    margin-top: 23px;
+    margin-top: 19px;
     font-size: 12px ;
     letter-spacing: 0.5px;
 }
@@ -605,6 +607,17 @@ a:hover {
     .cartContainer {
         width: 250px;
     }
+    #cartList .item_name {
+        font-size: 13px;
+    } 
+    .item_price{
+        font-size: 11px ;
+        margin-top: 13px;
+    }
+    .item_quantity{
+        font-size: 11px;
+    }
+
 }
 @media screen and (max-width: 1200px) {
     #mainTitle {
@@ -668,11 +681,41 @@ a:hover {
     .cartContainer {
         width: 225px;
     }
+    #cartList .item_name {
+        font-size: 11px;
+    } 
+    #cartList{
+        max-height: 310px ;
+    }
+    .item_price{
+        font-size: 10px ;
+        margin-top: 11px;
+    }
+
+    .item_quantity{
+        font-size: 10px;
+    }
+    .exit-button{
+        width: 10;
+        height: 10;
+        margin-left: 1px;
+        font-size: 12px;
+    }
+    #cartList li{
+        margin: 5px 0;
+    }
+
 }
 @media screen and (max-width: 921px) {
     #mainTitle {
         font-size: 24px;
         line-height: 48px;
+    }
+    .buttonSliderContainer{
+        height: 20px;
+    }
+    .arrow{
+        padding: 4px;
     }
     .cvarciImage {
         width: 215px;
@@ -772,9 +815,43 @@ a:hover {
         padding: 5px 10px;
     }
     .cartContainer {
-        width: 175px;
+        width: 200px;
+        max-height:350px ;
+        top: 80px;
     }
+    #cartList img {
+        height: 70px;
+        margin-right: 20px;
+        width: 70px;
+        border-radius: 6px;
+        vertical-align:middle;
+    }
+    .exit-button{
+        width: 14px;
+        height: 14px;
+        font-size: 10px;
+        margin-top: 1px;
+    }
+
+    .item_price{
+        font-size: 8px ;
+    }
+
+    .item_quantity{
+        font-size: 8px;
+        margin-top: 3px;
+    }
+    #cartList{
+        max-height: 220px;
+    }
+    #cartList li{
+        height: 70px;
+    }
+    #cartList .item_name {
+        font-size: 10px;
+    } 
 }
+
 @media screen and (max-width: 650px) {
     .deliveryItem {
         width: 120px;
@@ -782,6 +859,18 @@ a:hover {
         height: 44px;
         max-width: 140px;
     }
+    .arrow{
+        padding: 2px;
+    }
+    .arrowImage{
+        height: 7px !important;
+        width: 7px !important;
+        margin-bottom: 5px;
+    }
+    .buttonSliderContainer{
+        height: 12px !important;
+    }
+
     .footerIconSize{
         width: 15px;
         height: 15px;
@@ -820,8 +909,59 @@ a:hover {
         bottom: 7px;
     }
     .cartContainer {
-        width: 150px;
+        width: 140px;
+        top: 80px;
+        padding: 15px;
     }
+    #cartList img {
+        height: 40px;
+        margin-right: 20px;
+        width: 60px;
+    }
+    #cartList li{
+        height: 50px !important;
+        margin: 0px;
+        padding: 0px;
+    }
+    .exit-button{
+        width: 11px;
+        height: 11px;
+        font-size: 8px;
+        margin-top: 3px;
+        padding-bottom: 0px;
+    }
+
+    #cartList{
+        max-height: 140px;
+    } 
+    
+    .item_price{
+        font-size: 7px ;
+        margin-top: 3px;
+    }
+
+    .item_quantity{
+        font-size: 7px;
+    }
+
+    #cartList .item_name {
+        font-size: 7px;
+    } 
+   
+    .buttonSliderContainer{
+        height: 35px;
+        margin: 5px 0px;
+    }
+    #cartList li{
+        height: 90px;
+    }
+    .buyNowButton {
+        padding: 4px 0px;
+        margin-top: 8px;
+    }
+   .buyNowButtonText{
+       font-size: 8px;
+   }
 }
 @media screen and (max-width: 550px) {
     #mainTitle {
@@ -840,10 +980,7 @@ a:hover {
         font-size: 7px;
         line-height: 10px;
     }
-    .buyNowButton {
-        padding: 4px 0px;
-        margin-top: 10px;
-    }
+
     .cvarciImage {
         width: 175px;
         height: 175px;
@@ -935,8 +1072,17 @@ a:hover {
         margin-right: 0px;
     }
     .cartContainer {
-        width: 120px;
+        right:15px;
     }
+    #cartList img {
+        margin-right: 15px;
+    }
+    .exit-button{
+        font-size: 8px;
+        width: 11px;
+        height: 11px;
+    }
+
 }
 @media screen and (max-width: 500px) {
     .navigationButton{
@@ -979,6 +1125,10 @@ a:hover {
         justify-content: center;
         align-items: center;
         padding-left: 0px;
+    }
+    
+    .cartContainer{
+        right: 10px;
     }
 }
 @media screen and (max-width: 374px) {

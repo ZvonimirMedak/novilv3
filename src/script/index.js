@@ -28,7 +28,17 @@ const listeners = ()=>{
   }
   const attachSlideDownListener=()=>{
     if(!slideDownListener){
-      slideDownListener = document.getElementById("slideDownButton").addEventListener("click",()=>translateItems('-100px'))
+      slideDownListener = document.getElementById("slideDownButton").addEventListener("click",()=>{
+        const currentWidth = window.innerWidth;
+        const translationKeys = Object.keys(translateValues);
+        const translationValues = Object.values(translateValues);
+        for(let i = 0;i<translationKeys.length;i++){
+          if(currentWidth<=translationKeys[i]){
+            translateItems(`${translationValues[i].translateY}`);
+            break;
+          }
+        }
+      })
     }
   }
 
@@ -48,6 +58,20 @@ const listeners = ()=>{
 
 const counter = handleCounter();
 const evenetListeners = listeners();
+
+const translateValues={
+  650:{
+    translateY:'-50px'
+  },
+  921:{
+    translateY:'-80px'
+  },
+  2000:{
+    translateY:'-110px'
+  }
+}
+
+
 const addToCart=(inputID)=>{
     const ul = document.getElementById("cartList");
     let li = document.createElement("li")
@@ -70,11 +94,11 @@ const createItem=(inputID)=>{
   const amount = inputID.value;
   const total = parseInt(amount) * parseInt(price);
   return `
-    <img src="src/assets/${name}.png" alt="${actualName}"> 
+    <img loading="lazy" src="src/assets/${name}.png" alt="${actualName}"> 
     <div class="flex-wrap">
       <div class="flex-box-cart">
         <p class="item_name">${actualName}</p>
-        <button class="exit-button" onclick="removeItem(${name})">x</button>
+        <button class="exit-button" onclick="removeItem(${name})" aria-label="remove item from cart" type="button">x</button>
       </div>
     <p class="item_price">Cijena: <span class="weight">${total},00 kn</span></p>
     <p class="item_quantity">Količina: <span class="weight">${amount}</span></p>
